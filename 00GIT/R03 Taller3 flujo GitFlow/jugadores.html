@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album de Cromos - Mundial 2022</title>
+    <link rel="stylesheet" href="jugadores.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Album Virtual de Cromos</h1>
+        <p class="subtitulo">Copa del Mundo FIFA 2022</p>
+        <div class="contador">
+            <span class="progreso-label">Cromos desbloqueados:</span>
+            <span id="porcentajeDesbloqueo">0%</span>
+            <div class="barra-progreso">
+                <div id="barraFill" class="barra-fill"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="herramientas">
+        <input type="text" id="buscador" placeholder="Buscar jugador...">
+        <select id="filtroPais">
+            <option value="">Todos los paises</option>
+        </select>
+    </div>
+
+    <div class="estadisticas-grupo-cd" id="estadisticasCD">
+    </div>
+
+    <main id="album" class="album">
+    </main>
+
+    <footer>
+        <p>Proyecto colaborativo - Git Flow | Equipo Krakedev</p>
+    </footer>
+
+    <script src="jugadores.js"></script>
+</body>
+</html>
