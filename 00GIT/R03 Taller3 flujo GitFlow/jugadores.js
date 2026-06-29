@@ -26,13 +26,9 @@ function renderizarAlbum(lista) {
 
     lista.forEach(function (jugador, indice) {
         var card = document.createElement("div");
-        card.className = "card-cromo bloqueado";
+        card.className = "card-cromo";
         card.style.animationDelay = (indice * 0.05) + "s";
         card.setAttribute("data-id", jugador.id);
-
-        if (jugador.desbloqueado) {
-            card.classList.remove("bloqueado");
-        }
 
         // fondo de color
         var bg = document.createElement("div");
@@ -88,7 +84,7 @@ function renderizarAlbum(lista) {
         // boton desbloquear
         var btn = document.createElement("button");
         btn.className = "btn-desbloquear";
-        btn.textContent = jugador.desbloqueado ? "Desbloqueado" : "Desbloquear Cromo";
+        btn.textContent = "Desbloquear Cromo";
         btn.addEventListener("click", function () {
             desbloquearCromo(jugador.id, card, btn);
         });
@@ -113,7 +109,6 @@ function desbloquearCromo(id, card, btn) {
 
     jugador.desbloqueado = true;
     card.classList.add("destello");
-    card.classList.remove("bloqueado");
     btn.textContent = "Desbloqueado";
     cromosDesbloqueados++;
 
