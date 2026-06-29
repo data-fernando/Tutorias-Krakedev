@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos Mundialistas</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            background: linear-gradient(90deg, #f12711, #f5af19);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitulo {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .seccion {
+            margin-bottom: 2rem;
+        }
+
+        .seccion h2 {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.75rem;
+        }
+
+        .miembros {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .miembro {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            padding: 0.4rem 1rem;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .grupos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.75rem;
+        }
+
+        .grupo-link {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 1rem 0.5rem;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .grupo-link:hover {
+            transform: translateY(-3px) scale(1.05);
+            background: rgba(255, 255, 255, 0.14);
+        }
+
+        .grupo-link.activo {
+            border-color: #f5af19;
+            box-shadow: 0 0 12px rgba(245, 175, 25, 0.25);
+        }
+
+        .grupo-link.pendiente {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Copa del Mundo</h1>
+        <p class="subtitulo">Proyecto colaborativo - Grupos Mundialistas</p>
+
+        <div class="seccion">
+            <h2>Miembros del equipo</h2>
+            <div class="miembros">
+                <span class="miembro">Fernando G. Ponce</span>
+                <span class="miembro">Carlos M. López</span>
+                <span class="miembro">Ana V. Ruiz</span>
+                <span class="miembro">Diego A. Castillo</span>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <h2>Grupos</h2>
+            <div class="grupos">
+                <a href="GrupoA/paginas/grupoA.html" class="grupo-link activo">Grupo A</a>
+                <span class="grupo-link pendiente">Grupo B</span>
+                <span class="grupo-link pendiente">Grupo C</span>
+                <span class="grupo-link pendiente">Grupo D</span>
+                <span class="grupo-link pendiente">Grupo E</span>
+                <span class="grupo-link pendiente">Grupo F</span>
+                <span class="grupo-link pendiente">Grupo G</span>
+                <span class="grupo-link pendiente">Grupo H</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

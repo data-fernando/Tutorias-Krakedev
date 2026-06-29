@@ -65,3 +65,31 @@ main {
     font-weight: 600;
     letter-spacing: 0.5px;
 }
+
+.info {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border-left: 3px solid #f5af19;
+    text-align: center;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f5af19;
+}
