@@ -2,7 +2,14 @@
 
 ##Conflictos git
 
-Configuración Entorno
+### Configuración Entorno
+crear un Repositorio de github
+```
+git init
+git add .
+
+```
+
 
 
 Añadiendo colaboradores
